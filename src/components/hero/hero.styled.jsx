@@ -60,7 +60,7 @@ export const HeroSubTitle = ({ children }) => (
     variant="subtitle1"
     sx={{ textTransform: "capitalize", margin: "2rem 0" }}
   >
-    { children }
+    {children}
   </Typography>
 );
 

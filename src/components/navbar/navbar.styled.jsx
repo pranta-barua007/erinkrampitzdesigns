@@ -127,7 +127,7 @@ export const ResponsiveNavbarLink = ({ children, ...otherProps }) => (
       textAlign="center"
       sx={{ letterSpacing: "3px", textTransform: "uppercase" }}
     >
-      { children }
+      {children}
     </Typography>
   </MenuItem>
 );
