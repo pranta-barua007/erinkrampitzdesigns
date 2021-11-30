@@ -1,7 +1,7 @@
-import './App.css';
+import "./App.css";
 
-import NavBar from './components/navbar/navbar.component';
-import Hero from './components/hero/hero.component';
+import NavBar from "./components/navbar/navbar.component";
+import Hero from "./components/hero/hero.component";
 
 const pages = [
   "Home",
@@ -15,8 +15,8 @@ const pages = [
 function App() {
   return (
     <>
-      <NavBar pages={pages}/>
-      <Hero/>
+      <NavBar pages={pages} />
+      <Hero />
     </>
   );
 }

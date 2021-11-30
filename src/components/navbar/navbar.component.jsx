@@ -19,7 +19,7 @@ const NavBar = ({ pages }) => {
     setAnchorElNav(event.currentTarget);
   };
 
-   //responsive menu handler
+  //responsive menu handler
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -29,6 +29,7 @@ const NavBar = ({ pages }) => {
       <LogoContainer>
         <img src={logo} alt="logo" />
       </LogoContainer>
+
       <NavbarLinkContainer>
         {pages.map((page) => (
           <NavbarLink key={page} onClick={handleCloseNavMenu}>
@@ -36,6 +37,7 @@ const NavBar = ({ pages }) => {
           </NavbarLink>
         ))}
       </NavbarLinkContainer>
+
       <ResponsiveNavBarContainer
         anchorEl={anchorElNav}
         open={Boolean(anchorElNav)}
