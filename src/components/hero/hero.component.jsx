@@ -8,6 +8,7 @@ import {
   HeroCtaButton,
   HeroSubTitle,
   HeroTitle,
+  HeroImage,
 } from "./hero.styled";
 
 export default function Hero() {
@@ -21,7 +22,7 @@ export default function Hero() {
       </HeroInfoContainer>
 
       <HeroAvatarContainer>
-        <img src={heroAvatar} alt="hero-avatar" />
+        <HeroImage src={heroAvatar} alt="hero-avatar" />
       </HeroAvatarContainer>
     </HeroContainer>
   );

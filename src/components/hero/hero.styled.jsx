@@ -43,6 +43,10 @@ export const HeroAvatarContainer = ({ children }) => (
   </Grid>
 );
 
+export const HeroImage = styled("img")(() => ({
+  maxHeight: "1000px",
+}));
+
 export const HeroTitle = ({ children }) => (
   <Typography
     variant="h2"

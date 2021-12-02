@@ -32,8 +32,12 @@ const NavBar = ({ pages }) => {
 
       <NavbarLinkContainer>
         {pages.map((page) => (
-          <NavbarLink key={page} onClick={handleCloseNavMenu}>
-            {page}
+          <NavbarLink
+            key={page.name}
+            to={page.route}
+            onClick={handleCloseNavMenu}
+          >
+            {page.name}
           </NavbarLink>
         ))}
       </NavbarLinkContainer>
@@ -45,8 +49,12 @@ const NavBar = ({ pages }) => {
         onClose={handleCloseNavMenu}
       >
         {pages.map((page) => (
-          <ResponsiveNavbarLink key={page} onClick={handleCloseNavMenu}>
-            {page}
+          <ResponsiveNavbarLink
+            key={page.name}
+            to={page.route}
+            onClick={handleCloseNavMenu}
+          >
+            {page.name}
           </ResponsiveNavbarLink>
         ))}
       </ResponsiveNavBarContainer>

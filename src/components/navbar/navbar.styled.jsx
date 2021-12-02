@@ -1,13 +1,12 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
@@ -54,25 +53,25 @@ export const NavbarLinkContainer = ({ children }) => (
   </Box>
 );
 
-export const NavbarLink = ({ children, ...otherProps }) => (
+export const NavbarLink = ({ children, to, ...otherProps }) => (
   <Tooltip title={children}>
-    <Button
-      {...otherProps}
-      sx={{
-        my: 2,
-        color: "white",
+    <NavLink
+      to={to}
+      style={({ isActive }) => ({
+        textDecoration: "none",
+        textTransform: "uppercase",
         display: "block",
         fontSize: "11px",
         fontWeight: "400",
         letterSpacing: "3px",
-        "&:hover": {
-          color: "black",
-          background: "none",
-        },
-      }}
+        padding: "0 1rem",
+        color: isActive ? "black" : "white",
+        transition: "linear 0.3s",
+      })}
+      {...otherProps}
     >
       {children}
-    </Button>
+    </NavLink>
   </Tooltip>
 );
 
@@ -121,13 +120,18 @@ export const ResponsiveNavBarContainer = ({
   </Box>
 );
 
-export const ResponsiveNavbarLink = ({ children, ...otherProps }) => (
-  <MenuItem divider={true} {...otherProps}>
-    <Typography
-      textAlign="center"
-      sx={{ letterSpacing: "3px", textTransform: "uppercase" }}
-    >
-      {children}
-    </Typography>
-  </MenuItem>
+export const ResponsiveNavbarLink = ({ children, to, ...otherProps }) => (
+  <NavLink
+    to={to}
+    style={{
+      textDecoration: "none",
+      textAlign: "center",
+      letterSpacing: "3px",
+      textTransform: "uppercase",
+      color: "black",
+    }}
+    {...otherProps}
+  >
+    <MenuItem divider={true}>{children}</MenuItem>
+  </NavLink>
 );
