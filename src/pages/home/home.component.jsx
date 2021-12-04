@@ -4,6 +4,8 @@ import Hero from "../../components/hero/hero.component";
 import Intro from "../../components/intro/intro.component";
 import ImagesList from "../../components/image-list/image-list.component";
 
+import TestimonialSlider from "../../components/testimonial-slider/testimonial-slider.component";
+
 import { mockData } from "../../mock-data/mock-data";
 
 const HomePage = () => {
@@ -12,6 +14,7 @@ const HomePage = () => {
       <Hero />
       <Intro />
       <ImagesList itemData={mockData["instaData"]} />
+      <TestimonialSlider />
     </div>
   );
 };
