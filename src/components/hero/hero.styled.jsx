@@ -34,7 +34,6 @@ export const HeroAvatarContainer = ({ children }) => (
         display: { xs: "none", sm: "flex", md: "flex" },
         width: "auto",
         height: { xs: "60vh", md: "88vh", lg: "110vh" },
-        maxWidth: "800px",
         justifyContent: "flex-end",
       }}
     >
