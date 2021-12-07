@@ -145,6 +145,7 @@ export const TestimonialContent = ({ author, data }) => (
     <i
       style={{
         fontSize: "1.4rem",
+        color: "#606060",
       }}
     >
       {author}
@@ -155,11 +156,12 @@ export const TestimonialContent = ({ author, data }) => (
         lineHeight: "1.7rem",
         margin: "1.5rem 1rem",
         display: "-webkit-box",
-        webkitBoxOrient: "vertical",
-        webkitLineClamp: "3",
+        WebkitBoxOrient: "vertical",
+        WebkitLineClamp: "3",
         overflow: "hidden",
         textAlign: "center",
         fontStyle: "italic",
+        color: "#606060",
       }}
       sx={{
         quotes: `"“" "”" "‘" "’"`,
