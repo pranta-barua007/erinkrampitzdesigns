@@ -12,7 +12,12 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 export const TestimonialSliderContainer = ({ children }) => (
   <Container maxWidth="lg">
-    <Grid container justify="center" align="center">
+    <Grid
+      container
+      justify="center"
+      align="center"
+      sx={{ height: { xs: "300px" } }}
+    >
       {children}
     </Grid>
   </Container>
