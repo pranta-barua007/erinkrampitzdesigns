@@ -10,6 +10,7 @@ export const IntroContainer = ({ children }) => (
       align="center"
       sx={{
         padding: { xs: "2rem 0", md: "4rem 0" },
+        color: "#606060",
       }}
     >
       {children}
@@ -20,12 +21,9 @@ export const IntroContainer = ({ children }) => (
 export const IntroTitle = ({ children }) => (
   <Grid item xs={12}>
     <Typography
-      variant="caption"
+      variant="h5"
       sx={{
         textTransform: "capitalize",
-        fontWeight: "lighter",
-        fontSize: "2rem",
-        letterSpacing: "2px",
       }}
     >
       {children}
@@ -53,8 +51,8 @@ export const IntroLine = () => (
       sx={{
         width: "2px",
         height: "2px",
-        backgroundColor: "black",
-        border: "2px solid black",
+        backgroundColor: "#ddd",
+        border: "2px solid #ddd",
         borderRadius: "25px",
         position: "relative",
         "&::before": {
@@ -62,7 +60,7 @@ export const IntroLine = () => (
           display: "bolck",
           height: "1px",
           width: { xs: "120px", md: "340px" },
-          backgroundColor: "black",
+          backgroundColor: "#ddd",
           position: "absolute",
           top: "50%",
           left: "0",
@@ -73,7 +71,7 @@ export const IntroLine = () => (
           display: "bolck",
           height: "1px",
           width: { xs: "120px", md: "340px" },
-          backgroundColor: "black",
+          backgroundColor: "#ddd",
           position: "absolute",
           top: "50%",
           right: "0",
