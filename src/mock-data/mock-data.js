@@ -80,4 +80,26 @@ export const mockData = {
       data: "First, I would like to thank God for allowing me to meet Erin and her amazing family. The first day I contact Erin for consulting she was full of energy and we just were discussing my vision and she asked for a video of my home and I sent it to her and within 10 minutes she said, ” let me see if I can come by today.” I stay in Conroe which is a hour and some minutes from her location but she was still excited and full of energy! She arrived and she moved things around during his consulting time and took a ton of pictures. Next thing I know two hours past and she was sending me a text stating she would do the job on the first of March and let’s get the ball going yay! Little did she know that we have the same type of attitude about when we want something we want it now and her and her amazing husband killed the job! They went above and beyond my expectations I will be using her for some remodeling and organizing as well, I love you Erin and you are a beast at what you do! Also, thanks for making my son want to sleep in his room without a fight!",
     },
   ],
+  expertises: [
+    {
+      title: "Interior Expertise",
+      content:
+        "My main purpose is to provide you with the best and suitable services tailored to fit you and your needs. With excellence, knowledge, experience, responsibility, communication, passion, loyalty and transparency I want to make you happy to be where you are. Whether it is your home or office, I want you to love to be there. But most of all, I want you to have fun and trust in me to make it perfect for you! Therefore, the end goal is to give my best services to my customers.",
+    },
+    {
+      title: "Work Process",
+      content:
+        "Starting from scratch, I work closely with my clients to make their homes a dreamland. For that, a proper plan and process are followed. Creating designs and taking suggestions from customers is the first step. Moving on I start to execute them properly. I also work on unique ideas and concepts to come up with different ideas and design. Some clients like to be surprised and leave it all in my hands, others are more hands-on and like to be a part of the experience all of the way through. Either way is great and I love your input. We are in this together and it is your home/office and should be exactly what you want.",
+    },
+    {
+      title: "Guaranteed Work",
+      content:
+        "I am passionate about interior designing/decorating. Each client who has worked with me has deeply understood this. This is the main reason I can say that presenting you the best work is my guarantee. I truly take pride in my work and I want you to absolutely love every aspect of it. If there is anything you don’t love, just let me know and we will come up with the perfect solution to make it perfect.",
+    },
+  ],
+  about: {
+    para1: `My name is Erin Krampitz. As far as I can remember I have always loved decorating, organizing, and refreshing spaces. Whether I am simply changing a paint color or moving around furniture, it has been a true passion of mine.`,
+    para2: `I am excited to start a new project and take on a challenge. I want to help you fulfill your dreams of your home. I want you to love it and we will make it happen by working together and having fun! I want to design a space for you and your family that is beautiful, functional, and timeless. I am obsessed with attention to detail and I want your lifestyle and interests to show in my design.`,
+    para3: `My family is my inspiration, they give me encouragement to achieve and create beautiful spaces.`,
+  },
 };

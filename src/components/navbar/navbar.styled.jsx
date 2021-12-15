@@ -15,7 +15,7 @@ export const NavbarContainer = ({ children }) => (
     position="sticky"
     sx={{
       backgroundColor: "#a6a6a6",
-      paddingTop: "0.5rem",
+      padding: "0.5rem 0",
       fontFamily: "'Montserrat' ,Arial, Helvetica, sans-serif",
       boxShadow: "none",
     }}
@@ -29,16 +29,18 @@ export const NavbarContainer = ({ children }) => (
 );
 
 export const LogoContainer = ({ children }) => (
-  <Box
-    sx={{
-      mr: 2,
-      display: { xs: "flex", md: "flex" },
-      width: "auto",
-      height: { xs: "50px", md: "80px" },
-    }}
-  >
-    {children}
-  </Box>
+  <NavLink to="/">
+    <Box
+      sx={{
+        mr: 2,
+        display: { xs: "flex", md: "flex" },
+        width: "auto",
+        height: { xs: "50px", md: "80px" },
+      }}
+    >
+      {children}
+    </Box>
+  </NavLink>
 );
 
 export const NavbarLinkContainer = ({ children }) => (
