@@ -32,10 +32,13 @@ export const LogoContainer = ({ children }) => (
   <NavLink to="/">
     <Box
       sx={{
-        mr: 2,
         display: { xs: "flex", md: "flex" },
         width: "auto",
         height: { xs: "50px", md: "80px" },
+        "& > img": {
+          height: { xs: "50px", md: "inherit" },
+          width: "auto",
+        },
       }}
     >
       {children}
@@ -115,7 +118,10 @@ export const ResponsiveNavBarContainer = ({
       }}
       open={open}
       onClose={onClose}
-      sx={{ display: { xs: "block", md: "none" } }}
+      sx={{
+        display: { xs: "block", md: "none" },
+        "& .MuiList-root": { backgroundColor: "#606060", padding: "0" },
+      }}
     >
       {children}
     </Menu>
@@ -130,7 +136,7 @@ export const ResponsiveNavbarLink = ({ children, to, ...otherProps }) => (
       textAlign: "center",
       letterSpacing: "3px",
       textTransform: "uppercase",
-      color: "black",
+      color: "#fff",
     }}
     {...otherProps}
   >

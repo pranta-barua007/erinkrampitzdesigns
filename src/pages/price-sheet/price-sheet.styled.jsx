@@ -8,7 +8,7 @@ export const PriceSheetContainer = ({ children }) => (
       spacing={2}
       justify="center"
       align="center"
-      sx={{ padding: "4rem 0" }}
+      sx={{ padding: { md: "4rem 0", xs: "2rem 0" } }}
     >
       {children}
     </Grid>

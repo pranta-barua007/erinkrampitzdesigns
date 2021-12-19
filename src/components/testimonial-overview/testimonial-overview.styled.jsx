@@ -25,7 +25,7 @@ export const TestimonialOverviewContent = ({ content, author }) => (
         variant="h5"
         align="right"
         sx={{
-          width: { md: "350px", xs: "300px" },
+          width: { md: "350px", xs: "260px" },
           textOverflow: "ellipsis",
           overflow: "hidden",
           whiteSpace: "nowrap",
