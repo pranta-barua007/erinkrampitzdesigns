@@ -20,7 +20,7 @@ const PriceCard = ({ priceHeading, price, priceInfo }) => {
           <PriceCardHeadingText>{priceHeading}</PriceCardHeadingText>
         </PriceCardHeadingContainer>
         <PriceInfoContainer>
-          <PriceInfoTitle>${price}</PriceInfoTitle>
+          <PriceInfoTitle>$ {price}</PriceInfoTitle>
           <PriceInfoSubTitle>/ {priceInfo}</PriceInfoSubTitle>
         </PriceInfoContainer>
       </PriceCardContentContainer>

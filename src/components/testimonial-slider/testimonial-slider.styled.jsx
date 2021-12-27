@@ -16,7 +16,7 @@ export const TestimonialSliderContainer = ({ children }) => (
       container
       justify="center"
       align="center"
-      sx={{ height: { xs: "300px" } }}
+      sx={{ height: { xs: "300px" }, "& .MuiButton-root": { minWidth: "0" } }}
     >
       {children}
     </Grid>
@@ -95,6 +95,9 @@ export const TestimonialSliderNextButton = ({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        "& > .MuiPaper-root": {
+          padding: "0",
+        },
       }}
     >
       <MobileStepper
