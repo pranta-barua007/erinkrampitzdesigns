@@ -5,6 +5,7 @@ import {
   FooterTitle,
   FooterButton,
   FooterCopyright,
+  AppCreator,
 } from "./footer.styled";
 
 const Footer = () => (
@@ -14,6 +15,7 @@ const Footer = () => (
     <FooterCopyright>
       &copy; Copyright {new Date().getFullYear()} - Erin Krampitz
     </FooterCopyright>
+    <AppCreator creator={"Pranta Barua"} manager={"Colton Ehrman"} />
   </FooterContainer>
 );
 

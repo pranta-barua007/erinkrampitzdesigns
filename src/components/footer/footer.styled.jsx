@@ -67,3 +67,42 @@ export const FooterCopyright = ({ children }) => (
     </Link>
   </Grid>
 );
+
+export const AppCreator = ({ creator, manager }) => (
+  <Grid
+    item
+    xs={12}
+    sx={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    <Typography variant="body1"> Made with 🖤 by &nbsp; </Typography>
+    <Link
+      href="https://prantabarua.ml"
+      target="_blank"
+      sx={{
+        color: "gray",
+        "&:hover": {
+          color: "rgb(205, 72, 107)",
+        },
+      }}
+    >
+      <Typography variant="body1">{creator}</Typography>
+    </Link>
+    <Typography variant="body1"> &nbsp; & &nbsp; </Typography>
+    <Link
+      href="https://www.linkedin.com/in/colton-ehrman/"
+      target="_blank"
+      sx={{
+        color: "gray",
+        "&:hover": {
+          color: "rgb(205, 72, 107)",
+        },
+      }}
+    >
+      <Typography variant="body1">{manager}</Typography>
+    </Link>
+  </Grid>
+);
