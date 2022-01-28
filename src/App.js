@@ -24,15 +24,19 @@ function App() {
   return (
     <>
       <NavBar pages={pages} />
-      <Routes>
-        <Route index path="/" element={<HomePage />} />
-        <Route index path="/about" element={<AboutPage />} />
-        <Route index path="/price-sheet" element={<PriceSheetPage />} />
-        <Route index path="/portfolio" element={<PortfolioPage />} />
-        <Route index path="/testimonials" element={<TestimonialsPage />} />
-        <Route index path="/contact" element={<ContactPage />} />
-      </Routes>
-      <Footer />
+      <main>
+        <Routes>
+          <Route index path="/" element={<HomePage />} />
+          <Route index path="/about" element={<AboutPage />} />
+          <Route index path="/price-sheet" element={<PriceSheetPage />} />
+          <Route index path="/portfolio" element={<PortfolioPage />} />
+          <Route index path="/testimonials" element={<TestimonialsPage />} />
+          <Route index path="/contact" element={<ContactPage />} />
+        </Routes>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

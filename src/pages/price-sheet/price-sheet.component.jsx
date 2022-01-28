@@ -20,10 +20,10 @@ export default function PriceSheetPage() {
         />
       </Helmet>
       <PriceSheetContainer>
-        <PriceCard priceHeading={"Rate"} price={150} priceInfo={"hour"} />
+        <PriceCard priceHeading={"Rate"} price={200} priceInfo={"hour"} />
         <PriceCard
           priceHeading={"Consulting"}
-          price={200}
+          price={300}
           priceInfo={"consult"}
         />
       </PriceSheetContainer>
